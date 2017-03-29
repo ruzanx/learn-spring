@@ -46,8 +46,6 @@ class SecurityConfig extends WebSecurityConfigurerAdapter {
         auth
                 .userDetailsService(userDetailsService)
                 .passwordEncoder(new BCryptPasswordEncoder());
-        auth.inMemoryAuthentication()
-        .withUser("ruzan@codersedge.com").password("pass").roles("ADMIN").authorities("ADMIN");
     }
 
 }
